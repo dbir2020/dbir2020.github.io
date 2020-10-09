@@ -74,22 +74,22 @@ a:hover {
 	font-weight: bolder;
 }
 
-#content {
+.content {
 	width: 70%;
 	margin:0 auto;
 }
 
-#content .main {
+.content .main {
 	padding-top: 1.5em;
 }
 
-#content .logo {
+.content .logo {
 	text-align: center;
 	font-size: calc(24px + 10vw);
 	color: red;
 }
 
-#content .img {
+.content .img {
 	height: calc(22px + 9vw);
 	width: calc(22px + 9vw);
 	position:absolute;
@@ -97,12 +97,12 @@ a:hover {
 	margin-left: -7vw;
 }
 
-#content .text {
+.content .text {
 	font-size: calc(12px + 1.5vw);
 	margin:0 auto;
 }
 
-#block {
+.block {
 	border-bottom: 10px solid #ff0000;
 	padding:.5em 2em;
 }
@@ -147,32 +147,31 @@ table tr td.right {
 	margin: 0 auto;
 }
 
-.sponsors#block {
+.sponsors.block {
 	padding: .5em 0;
 }
 
 #nav-placeholder {
 	position: fixed;
-  background: white;
-	padding: 0;
+  	background: white;
 	margin: 0 auto;
-  z-index: 1;
+  	z-index: 1;
 	width: 70%;
 	padding: .25em 0;
 	border-bottom: 10px solid red;
 }
 
-#nav-placeholder a {
+.nav a {
 	text-transform: uppercase;
 	padding: 0 .5em;
 }
 
-ul#horizontal, ul#nav {
+ul#horizontal, ul.nav {
 	list-style: none;
 	width: 100%;
-	}
+}
 
-ul#nav {
+ul.nav {
 	padding: 0;
 	margin: 0;
 }
@@ -181,7 +180,7 @@ ul#horizontal {
 	padding: 0 0 20px 0;
 }
 
-ul#horizontal li, ul#nav li {
+ul#horizontal li, ul.nav li {
 		display: inline;
 	}
 
