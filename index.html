@@ -8,14 +8,22 @@
     <link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <title>DIR 2020 ⚡ Belgian Edition ⚡ December 3, 2020 ⚡ Antwerp</title>
+    <title>DIR 2020 🧇 Belgian Edition 🧇 December 3, 2020 🧇 Antwerp</title>
 </head>
 
 <body>
 
-    <script>$(function () {
-            $("#nav-placeholder").load("nav.html");
-            $("#logo-placeholder").load("logo.html");
+    <script>
+        let emojis = ["🍟", "🧇"]
+        let emoji = emojis[Math.floor(Math.random() * emojis.length)];
+        function swap_emoji(){
+            $(".belgian-emoji").html(emoji)
+        }
+
+        $(function () {
+            $("#nav-placeholder").load("nav.html", "", swap_emoji);
+            $("#logo-placeholder").load("logo.html", "", swap_emoji);
+            swap_emoji()
         });</script>
 
     <div class="content">
@@ -23,7 +31,6 @@
 
         <div class="main">
             <div id="logo-placeholder"></div>
-
 
             <!-- <div id="block">
                 <small>#DIR2019</small><br />
