@@ -2,117 +2,200 @@
 <html lang="en">
 
 <head>
-    <link href="./dir.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <!-- TODO: favicon change to something more appropriate? -->
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <title>DIR 2020 🧇 Belgian Edition 🧇 December 3, 2020 🧇 Antwerp</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DIR 2020</title>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&family=Roboto&display=swap"
+		rel="stylesheet">
+	<!-- <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon"> -->
+	<!-- Bulma Version 0.9.0-->
+	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+	<link rel="stylesheet" href="css/dir.css">
+	<link rel="stylesheet" href="css/bulma-divider.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
+	<!-- TODO Fix the emoji swapper -->
+	<script>
+		let emojis = ["🍟", "🧇"]
+		let emoji = emojis[Math.floor(Math.random() * emojis.length)];
+		function swap_emoji() {
+			$(".belgian-emoji").html(emoji)
+		}
 
-    <script>
-        let emojis = ["🍟", "🧇"]
-        let emoji = emojis[Math.floor(Math.random() * emojis.length)];
-        function swap_emoji(){
-            $(".belgian-emoji").html(emoji)
-        }
-
-        $(function () {
-            $("#nav-placeholder").load("nav.html", "", swap_emoji);
-            $("#logo-placeholder").load("logo.html", "", swap_emoji);
-            swap_emoji()
-        });</script>
-
-    <div class="content">
-        <div id="nav-placeholder"></div>
-
-        <div class="main">
-            <div id="logo-placeholder"></div>
-
-            <!-- <div id="block">
-                <small>#DIR2019</small><br />
-                <a class="twitter-timeline" data-width="500" data-height="800" data-link-color="#FF0000"
-                    href="https://twitter.com/dir_2019?ref_src=twsrc%5Etfw">Tweets by dir_2019</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div> -->
-
-            <!-- <div id="block" class="sponsors">
-                <small>Gold sponsors:</small>
-                <ul id="horizontal">
-                    <li><a href="https://www.abnamro.com/en/about-abnamro/in-society/innovation/artificial-intelligence/"
-                            target="_blank"><img src="img/sponsors/abn.png" /></a></li>
-                    <li><a href="https://www.sooqr.com/?utm_source=sponsorship&utm_medium=referral&utm_campaign=dir2019"
-                            target="_blank"><img src="img/sponsors/sooqr.png" /></a></li>
-                    <li><a href="https://www.bol.com/nl/" target="_blank"><img src="img/sponsors/bol.jpg" /></a></li>
-                </ul>
-
-                <small>Silver sponsors:</small>
-                <ul id="horizontal">
-                    <li><a href="https://www.bookarang.com/" target="_blank"><img
-                                src="img/sponsors/bookarang.png" /></a></li>
-                    <li><a href="https://www.zeta-alpha.com/" target="_blank"><img
-                                src="img/sponsors/zeta-alpha.jpg" /></a></li>
-                    <li><a href="https://www.textkernel.com/" target="_blank"><img
-                                src="img/sponsors/textkernel.png" /></a></li>
-                    <li><a href="https://xite.nl/" target="_blank"><img src="img/sponsors/XITE.png" /></a></li>
-                    <li><a href="https://mytomorrows.com/en/" target="_blank"><img
-                                src="img/sponsors/mytomorrows.jpg" /></a></li>
-                    <li><a href="https://www.froomle.ai/" target="_blank"><img src="img/sponsors/Froomle.png" /></a>
-                    </li>
-                    <li><a href="https://www.elsevier.com/about/careers/technology-careers/amsterdam-tech-hub"
-                            target="_blank"><img src="img/sponsors/elsevier-tech.png" /></a></li>
-                    <li><a href="https://www.ogd.nl/" target="_blank"><img src="img/sponsors/ogd.png" /></a></li>
-                </ul>
-
-                <small>In cooperation with:</small>
-                <ul id="horizontal">
-                    <li><a href="https://www.sigir.org/" target="_blank"><img src="img/sponsors/sigir.png" /></a></li>
-                    <li><a href="http://www.siks.nl/" target="_blank"><img src="img/sponsors/siks.jpg" /></a></li>
-                </ul>
-
-            </div>
- -->
-            <div class="block text">
-                <p>DIR 2020 will be on the internet.</p>
-                <p>More info coming soon.</p>
-            </div>
-
-            <div class="block text">
-                <!-- <p>Download the DIR 2019 program booklet <a href="booklet.pdf">here</a></p>
-                <p><strong>DIR is sold out!</strong> We are fully booked and have closed registration. We are excited
-                    for welcoming 120 attendees to this year's DIR!</p>
-                <p>Our <a href="posters.html">poster program</a> is up!</p>
-                <p>We have published our program with 18 top IR/RecSys publications and 2 keynotes. Head on over to <a
-                        href="program.html">program</a> to check it out!</p>
-                <p>Our second keynote speaker is confirmed! <a href="https://people.cs.kuleuven.be/~sien.moens/"
-                        target="_blank">Prof. Marie-Francine Moens</a> (KU Leuven)!</p>
-                <p>We are happy to announce our first keynote speaker: <a
-                        href="https://www.aau.at/en/ainf/research-groups/infsys/team/dietmar-jannach/"
-                        target="_blank">prof. Dietmar Jannach</a> (AAU)!</p>
-                <p>Registration is open!</p>
-                <p>DIR 2019 will be held at Lloyd Hotel, see our <a href="venue.html">Venue</a> page for more
-                    information</p> -->
-                <!-- TODO: create explanation text -->
-                <!-- TODO: create call for sponsor page, and link -->
-                <p>💰 See our call for sponsors: <a href="soon.html">Sponsor DIR 2020</a></p>
-            </div>
-
-            <div class="block text">
-                <p>Follow us on Twitter: <a href="https://www.twitter.com/dir_2020">@DIR_2020</a></p>
-            </div>
-
-            <div class="block text">
-                <p>Organized by:</p>
-                <!-- TODO who goes here? -->
-                <p>Jan Van Balen (Adrem)<br />Joey de Pauw (Adrem)<br />Lien Michiels (Froomle)<br />Robin Verachtert
-                    (Froomle)</p>
-            </div>
-        </div>
-    </div>
-
+		$(function () {
+			swap_emoji()
+		});</script>
+	<!-- LANDING PAGE  -->
+	<section class="hero is-fullheight landing">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title is-1 is-family-sans-serif is-light">DIR 2020</h1>
+				<h1 class="title is-2 is-family-sans-serif is-primary">
+					December 3, 2020
+				</h1>
+				<h2 class="title is-4 is-family-monospace is-primary">
+					The 19th Dutch-Belgian Information Retrieval Workshop 🧇 Antwerp (online)
+				</h2>
+				<br>
+				<div class="social-media">
+					<a href="https://www.youtube.com/channel/UCd5n7d2vrrbScInaZqMUUzw" target="_blank"
+						class="button is-large is-light"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/DIR_2020" target="_blank" class="button is-large is-light"><i
+							class="fa fa-twitter" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- VENUE  -->
+	<section class="hero is-secondary">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title is-1 is-family-monospace">Venue</h1>
+				<h3 class="title is-3 is-family-sans-serif">
+					DIR 2020 will be a virtual conference. <br>
+					More information will be announced soon.
+				</h3>
+				<br>
+				<div class="container">
+					<div class="columns">
+						<div class="column is-one-quarter"></div>
+						<div class="column is-half">
+							<form action="https://formspree.io/f/xleobagy" method="POST">
+								<div class="field">
+									<label class="label has-text-left">Email</label>
+									<div class="control">
+										<input class="input is-medium" type="text" name="_replyto"
+											placeholder="first.last@email.com" required autocomplete="email">
+									</div>
+								</div>
+								<div class="control">
+									<button type="submit" class="button is-primary is-fullwidth is-family-sans-serif">💡
+										Notify
+										me when registration starts
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="column is-one-quarter"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="columns">
+					<div class="column"></div>
+					<div class="column is-four-fifths">
+						<div class="is-divider"></div>
+					</div>
+					<div class="column"></div>
+				</div>
+			</div>
+			<div class="container has-text-centered">
+				<!-- SPONSORS  -->
+				<div class="columns">
+					<div class="column is-one-quarter"></div>
+					<div class="column is-half">
+						<h1 class="title is-1 is-family-monospace">Call for Sponsors</h1>
+						<h1 class="title is-3 is-family-sans-serif">
+							Would you like to sponsor DIR2020?
+						</h1>
+						<a class="button is-primary is-fullwidth is-family-sans-serif "
+							href="mailto:dutchbelgianir@gmail.com">
+							💰 Get in touch!
+						</a>
+					</div>
+					<div class="column is-one-quarter"></div>
+				</div>
+				<div class="container">
+					<div class="columns">
+						<div class="column"></div>
+						<div class="column is-four-fifths">
+							<div class="is-divider"></div>
+						</div>
+						<div class="column"></div>
+					</div>
+				</div>
+				<!-- SPEAKERS  -->
+				<div class="container has-text-centered">
+					<div class="columns">
+						<div class="column is-one-quarter"></div>
+						<div class="column is-half">
+							<h1 class="title is-1 is-family-monospace">Nominate a Speaker</h1>
+							<p class="title is-4 is-family-sans-serif">Just like the 2019 edition, DIR 2020 is inviting
+								BE/NL
+								authors of top-ranked papers published at SIGIR,
+								ICTIR, TheWebConf, WSDM, CIKM, NeurIPS, RecSys, CHI, CHIIR, KDD, ECIR, ACL, EMNLP, ...
+								to
+								present their work in a lighting talk. <br>
+								We've been scouring the conference proceedings for authors with ties to the Netherlands
+								and
+								Belgium, but we're only human...
+							</p>
+							<p class="title is-4 is-family-sans-serif is-primary">
+								So let us know who you think should be invited! <br>
+								And yes, you're allowed to self-nominate 😉
+							</p>
+							<form action="https://formspree.io/f/xrgopgoy" method="POST">
+								<div class="field">
+									<label class="label">Name</label>
+									<div class="control">
+										<input class="input is-medium" type="text" name="_name" autocomplete="name">
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Email</label>
+									<div class="control">
+										<input class="input is-medium" type="text" name="_replyto" required
+											autocomplete="email">
+									</div>
+								</div>
+								<div class="field">
+									<label class="label">Message</label>
+									<div class="control">
+										<textarea class="textarea is-medium" name="_message"></textarea>
+									</div>
+								</div>
+								<div class="control">
+									<button type="submit"
+										class="button is-primary is-family-sans-serif is-fullwidth">Nominate a
+										speaker</button>
+								</div>
+							</form>
+						</div>
+						<div class="column is-one-quarter"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="columns">
+						<div class="column"></div>
+						<div class="column is-four-fifths">
+							<div class="is-divider"></div>
+						</div>
+						<div class="column"></div>
+					</div>
+				</div>
+				<!-- SPEAKERS  -->
+				<div class="container has-text-centered">
+					<div class="columns">
+						<div class="column is-one-quarter"></div>
+						<div class="column is-half">
+							<h1 class="title is-1 is-family-monospace">Team</h1>
+							<p class="title is-4 is-family-sans-serif">
+								Jan Van Balen (Adrem)<br />
+								Joey de Pauw (Adrem)<br />
+								Lien Michiels (Froomle)<br />
+								Robin Verachtert (Froomle)
+							</p>
+						</div>
+						<div class="column is-one-quarter"></div>
+					</div>
+				</div>
+			</div>
+	</section>
 </body>
 
 </html>

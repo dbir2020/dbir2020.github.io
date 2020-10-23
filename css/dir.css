@@ -1,0 +1,74 @@
+:root{
+    --primary: #FF6663;
+    --secondary: #769AD0;
+    --dark: #333745;
+    --light: #f8fbef;
+  }
+
+html {
+    background-color: var(--light);
+}
+
+.hero.is-fullheight.landing {
+    /* background-image: url('https://images.unsplash.com/photo-1532616998070-8e189b324cb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format'); */
+    background-image: url('https://images.pexels.com/photos/722701/antwerp-station-central-station-city-722701.jpeg?cs=srgb&dl=pexels-skitterphoto-722701.jpg&fm=jpg');
+    background-size: cover;
+}
+
+.title.is-1 {
+    /* font-size: 10rem !important; */
+    color: var(--primary) !important;
+}
+
+.title.is-1.is-light {
+    font-size: 10rem !important;
+    color: var(--primary) !important;
+    background: var(--light);
+
+}
+
+.title.is-2 {
+    /* font-size: 10rem !important; */
+    color: var(--secondary) !important;
+}
+
+.title.is-2.is-primary {
+    /* font-size: 10rem !important; */
+    color: var(--primary) !important;
+    background: var(--light);
+}
+
+.title.is-3 {
+    /* font-size: 10rem !important; */
+    color: var(--secondary) !important;
+}
+
+.title.is-4 {
+    /* font-size: 10rem !important; */
+    color: var(--secondary) !important;
+}
+
+.title.is-4.is-primary {
+    /* font-size: 10rem !important; */
+    color: var(--primary) !important;
+    background: var(--light);
+}
+
+.button.is-light {
+    background: none;
+    color: var(--light);
+}
+
+.button.is-primary {
+    background-color: var(--primary);
+}
+
+/* .is-family-monospace {
+    font-family: 'EB Garamond', serif !important;
+} */
+
+/* .is-family-sans-serif {
+    font-family: 'Montserrat', sans-serif !important;
+} */
+
+/* f6f5f5 */
