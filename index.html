@@ -58,29 +58,33 @@
 			<div class="container has-text-centered">
 				<h1 class="title is-1 is-family-monospace">Venue</h1>
 				<h3 class="title is-3 is-family-sans-serif">
-					DIR 2020 will be a virtual workshop. <br>
-					More information will be announced soon.
+					DIR 2020 will be a virtual workshop.
 				</h3>
-				<br>
 				<div class="container">
 					<div class="columns">
 						<div class="column is-one-quarter"></div>
 						<div class="column is-half">
-							<form action="https://formspree.io/f/xleobagy" method="POST">
-								<div class="field">
-									<label class="label has-text-left">Email</label>
-									<div class="control">
-										<input class="input is-medium" type="email" name="_replyto"
-											placeholder="first.last@email.com" required autocomplete="email">
-									</div>
-								</div>
-								<div class="control">
-									<button type="submit" class="button is-primary is-fullwidth is-family-sans-serif">💡
-										Notify
-										me when registration starts
-									</button>
-								</div>
-							</form>
+							<h3 class="title is-3 is-family-sans-serif is-primary">
+								Registrations are open!
+							</h3>
+							<!-- Noscript content for added SEO -->
+							<noscript><a href="https://dir2020.eventbrite.be" rel="noopener noreferrer" target="_blank">
+							</noscript>
+							<!-- You can customize this button any way you like -->
+							<button id="eventbrite-widget-modal-trigger-128126643239" type="button"
+									class="button is-primary is-family-sans-serif is-fullwidth">🎟️ Register Now</button>
+							<noscript></a>🎟️ Buy Tickets on Eventbrite</noscript>
+
+							<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+							<script type="text/javascript">
+								window.EBWidgets.createWidget({
+									widgetType: 'checkout',
+									eventId: '128126643239',
+									modal: true,
+									modalTriggerElementId: 'eventbrite-widget-modal-trigger-128126643239',
+								});
+							</script>
 						</div>
 						<div class="column is-one-quarter"></div>
 					</div>
