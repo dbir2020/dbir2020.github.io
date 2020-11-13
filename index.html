@@ -119,23 +119,38 @@
 								Don't hesitate and claim your spot in our virtual poster room.
 							</p>
 							<form action="https://formspree.io/f/mrgolqgn" method="POST">
-								<div class="field">
-									<label class="label has-text-left">Name</label>
-									<div class="control">
-										<input class="input is-medium" type="text" name="_name" autocomplete="name">
+								<div class="columns">
+									<div class="column is-half">
+										<div class="field">
+											<label class="label has-text-left">Name<sup>*</sup></label>
+											<div class="control">
+												<input class="input is-medium" type="text" name="_name" required
+													   autocomplete="name">
+											</div>
+										</div>
+									</div>
+									<div class="column is-half">
+										<div class="field">
+											<label class="label has-text-left">Affiliation<sup></sup></label>
+											<div class="control">
+												<input class="input is-medium" type="text" name="_affiliation"
+													   autocomplete="affiliation">
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="field">
-									<label class="label has-text-left">Email</label>
+									<label class="label has-text-left">Email<sup>*</sup></label>
 									<div class="control">
 										<input class="input is-medium" type="email" name="_replyto" required
-											autocomplete="email">
+											   autocomplete="email">
 									</div>
 								</div>
 								<div class="field">
-									<label class="label has-text-left">Poster Title</label>
+									<label class="label has-text-left">Poster Title<sup>*</sup></label>
 									<div class="control">
-										<input class="input is-medium" type="text" name="_title" autocomplete="title">
+										<input class="input is-medium" type="text" name="_title" required
+											   autocomplete="title">
 									</div>
 								</div>
 								<div class="field">
