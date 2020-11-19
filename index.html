@@ -50,7 +50,6 @@
 				</div>
 			</div>
 		</div>
-		</div>
 	</section>
 	<!-- VENUE  -->
 	<section class="hero is-secondary">
@@ -60,15 +59,14 @@
 				<h3 class="title is-3 is-family-sans-serif">
 					DIR 2020 will be a virtual workshop.
 				</h3>
-				<div class="container">
-					<div class="columns">
-						<div class="column is-one-quarter"></div>
+					<div class="columns is-centered">
 						<div class="column is-half">
 							<h3 class="title is-3 is-family-sans-serif is-primary">
 								Registrations are open!
 							</h3>
 							<!-- Noscript content for added SEO -->
-							<noscript><a href="https://dir2020.eventbrite.be" rel="noopener noreferrer" target="_blank">
+							<noscript>
+								<a href="https://dir2020.eventbrite.be" rel="noopener noreferrer" target="_blank">
 							</noscript>
 							<!-- You can customize this button any way you like -->
 							<button id="eventbrite-widget-modal-trigger-128126643239" type="button"
@@ -86,107 +84,92 @@
 								});
 							</script>
 						</div>
-						<div class="column is-one-quarter"></div>
 					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="columns">
-					<div class="column"></div>
-					<div class="column is-four-fifths">
-						<div class="is-divider"></div>
-					</div>
-					<div class="column"></div>
-				</div>
-			</div>
-			<div class="container has-text-centered">
-				<!-- POSTERS  -->
-				<div class="container has-text-centered">
-					<div class="columns">
-						<div class="column is-one-quarter"></div>
-						<div class="column is-half">
-							<h1 class="title is-1 is-family-monospace">Present Your Work</h1>
-							<p class="title is-4 is-family-sans-serif">
-								DIR 2020 is inviting Belgium and Netherlands-based
-								researchers to talk about their work in a poster session.<br>
-								Want to present your recent publication?
-								Have an idea that you want feedback on?
-								Come talk to your peers about it! <br>
-
-							</p>
-							<p class="title is-4 is-family-sans-serif is-primary">
-								You can expect vibrant discussions and plenty of social interactions.
-								Don't hesitate and claim your spot in our virtual poster room.
-							</p>
-							<form action="https://formspree.io/f/mrgolqgn" method="POST">
-								<div class="columns">
-									<div class="column is-half">
-										<div class="field">
-											<label class="label has-text-left">Name<sup>*</sup></label>
-											<div class="control">
-												<input class="input is-medium" type="text" name="_name" required
-													   autocomplete="name">
-											</div>
-										</div>
-									</div>
-									<div class="column is-half">
-										<div class="field">
-											<label class="label has-text-left">Affiliation<sup></sup></label>
-											<div class="control">
-												<input class="input is-medium" type="text" name="_affiliation"
-													   autocomplete="affiliation">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="field">
-									<label class="label has-text-left">Email<sup>*</sup></label>
-									<div class="control">
-										<input class="input is-medium" type="email" name="_replyto" required
-											   autocomplete="email">
-									</div>
-								</div>
-								<div class="field">
-									<label class="label has-text-left">Poster Title<sup>*</sup></label>
-									<div class="control">
-										<input class="input is-medium" type="text" name="_title" required
-											   autocomplete="title">
-									</div>
-								</div>
-								<div class="field">
-									<label class="label has-text-left">Abstract</label>
-									<div class="control">
-										<textarea class="textarea is-medium" name="_abstract"></textarea>
-									</div>
-								</div>
-								<div class="control">
-									<button type="submit"
-										class="button is-primary is-family-sans-serif is-fullwidth">🖼️ Apply for Poster</button>
-								</div>
-							</form>
-							<br>
-							<p class="title is-4 is-family-sans-serif">
-								Application deadline: November 27
-							</p>
-						</div>
-						<div class="column is-one-quarter"></div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="columns">
-						<div class="column"></div>
+					<div class="columns is-centered">
 						<div class="column is-four-fifths">
 							<div class="is-divider"></div>
 						</div>
-						<div class="column"></div>
+					</div>
+
+				<!-- POSTERS  -->
+				<div class="columns is-centered">
+					<div class="column is-half">
+						<h1 class="title is-1 is-family-monospace">Present Your Work</h1>
+						<p class="title is-4 is-family-sans-serif">
+							DIR 2020 is inviting Belgium and Netherlands-based
+							researchers to talk about their work in a poster session.<br>
+							Want to present your recent publication?
+							Have an idea that you want feedback on?
+							Come talk to your peers about it! <br>
+
+						</p>
+						<p class="title is-4 is-family-sans-serif is-primary">
+							You can expect vibrant discussions and plenty of social interactions.
+							Don't hesitate and claim your spot in our virtual poster room.
+						</p>
+						<form action="https://formspree.io/f/mrgolqgn" method="POST">
+							<div class="columns">
+								<div class="column is-half">
+									<div class="field">
+										<label class="label has-text-left" for="p_name">Name<sup>*</sup></label>
+										<div class="control">
+											<input class="input is-medium" type="text" name="_name" id="p_name" required
+												   autocomplete="name">
+										</div>
+									</div>
+								</div>
+								<div class="column is-half">
+									<div class="field">
+										<label class="label has-text-left" for="p_aff">Affiliation<sup></sup></label>
+										<div class="control">
+											<input class="input is-medium" type="text" name="_affiliation" id="p_aff"
+												   autocomplete="affiliation">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label class="label has-text-left" for="p_replyto">Email<sup>*</sup></label>
+								<div class="control">
+									<input class="input is-medium" type="email" name="_replyto" id="p_replyto" required
+										   autocomplete="email">
+								</div>
+							</div>
+							<div class="field">
+								<label class="label has-text-left" for="p_title">Poster Title<sup>*</sup></label>
+								<div class="control">
+									<input class="input is-medium" type="text" name="_title" id="p_title" required
+										   autocomplete="title">
+								</div>
+							</div>
+							<div class="field">
+								<label class="label has-text-left" for="p_abstr">Abstract</label>
+								<div class="control">
+									<textarea class="textarea is-medium" name="_abstract" id="p_abstr"></textarea>
+								</div>
+							</div>
+							<div class="control">
+								<button type="submit"
+									class="button is-primary is-family-sans-serif is-fullwidth">🖼️ Apply for Poster</button>
+							</div>
+						</form>
+						<br>
+						<p class="title is-4 is-family-sans-serif">
+							Application deadline: November 27
+						</p>
 					</div>
 				</div>
+				<div class="columns is-centered">
+					<div class="column is-four-fifths">
+						<div class="is-divider"></div>
+					</div>
+				</div>
+
 				<!-- SPONSORS  -->
-				<div class="columns">
-					<div class="column is-one-quarter"></div>
+				<div class="columns is-centered">
 					<div class="column is-half">
 						<h1 class="title is-1 is-family-monospace">Sponsors</h1>
-						<div class="columns">
+						<div class="columns is-mobile">
 							<div class="column is-one-third">
 <!--								<a href="" target="_blank">-->
 <!--									<img src="img/sponsors/" alt="">-->
@@ -204,19 +187,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="column is-one-quarter"></div>
 				</div>
-				<div class="container">
-					<div class="columns">
-						<div class="column"></div>
-						<div class="column is-four-fifths">
-							<div class="is-divider"></div>
-						</div>
-						<div class="column"></div>
+				<div class="columns is-centered">
+					<div class="column is-four-fifths">
+						<div class="is-divider"></div>
 					</div>
 				</div>
-				<div class="columns">
-					<div class="column is-one-quarter"></div>
+
+				<!-- CALL FOR SPONSORS -->
+				<div class="columns is-centered">
 					<div class="column is-half">
 						<h1 class="title is-1 is-family-monospace">Call for Sponsors</h1>
 						<h1 class="title is-3 is-family-sans-serif">
@@ -227,40 +206,34 @@
 							💰 Get in touch!
 						</a>
 					</div>
-					<div class="column is-one-quarter"></div>
 				</div>
-				<div class="container">
-					<div class="columns">
-						<div class="column"></div>
-						<div class="column is-four-fifths">
-							<div class="is-divider"></div>
-						</div>
-						<div class="column"></div>
+				<div class="columns is-centered">
+					<div class="column is-four-fifths">
+						<div class="is-divider"></div>
 					</div>
 				</div>
+
 				<!-- ORGANIZERS  -->
-				<div class="container has-text-centered">
-					<div class="columns">
-						<div class="column is-one-quarter"></div>
-						<div class="column is-half">
-							<h1 class="title is-1 is-family-monospace">Team</h1>
-							<p class="title is-4 is-family-sans-serif">
-								Bart Goethals (University of Antwerp & Froomle)<br />
-								Jan Van Balen (University of Antwerp)<br />
-								Joey de Pauw (University of Antwerp)<br />
-								Olivier Jeunen (University of Antwerp) <br />
-								Lien Michiels (University of Antwerp & Froomle)<br />
-								Robin Verachtert (University of Antwerp & Froomle)
-							</p>
-							<a class="button is-primary is-fullwidth is-family-sans-serif "
-							href="mailto:dutchbelgianir@gmail.com">
-							Questions? Remarks? Contact us!
-						</a>
-						</div>
-						<div class="column is-one-quarter"></div>
+				<div class="columns is-centered">
+					<div class="column is-half">
+						<h1 class="title is-1 is-family-monospace">Team</h1>
+						<p class="title is-4 is-family-sans-serif">
+							Bart Goethals (University of Antwerp & Froomle)<br />
+							Jan Van Balen (University of Antwerp)<br />
+							Joey de Pauw (University of Antwerp)<br />
+							Olivier Jeunen (University of Antwerp) <br />
+							Lien Michiels (University of Antwerp & Froomle)<br />
+							Robin Verachtert (University of Antwerp & Froomle)
+						</p>
+						<a class="button is-primary is-fullwidth is-family-sans-serif "
+						href="mailto:dutchbelgianir@gmail.com">
+						Questions? Remarks? Contact us!
+					</a>
 					</div>
 				</div>
+
 			</div>
+		</div>
 	</section>
 </body>
 

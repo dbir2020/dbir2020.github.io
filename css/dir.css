@@ -55,7 +55,7 @@ html {
 }
 
 .button.is-light {
-    background: none;
+    /*background: none;*/
     color: var(--primary);
 }
 
