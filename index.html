@@ -20,7 +20,7 @@
 
 <body>
 	<script>
-		let emojis = ["🍟", "🧇"]
+		let emojis = ["&#127839;", "&#129479;", "&#127851;"]
 		let emoji = emojis[Math.floor(Math.random() * emojis.length)];
 		function swap_emoji() {
 			$(".belgian-emoji").html(emoji)
@@ -28,7 +28,8 @@
 
 		$(function () {
 			swap_emoji()
-		});</script>
+		});
+	</script>
 
 	<!-- LANDING PAGE  -->
 	<section class="hero is-fullheight landing">
@@ -169,21 +170,16 @@
 				<div class="columns is-centered">
 					<div class="column is-half">
 						<h1 class="title is-1 is-family-monospace">Sponsors</h1>
-						<div class="columns is-mobile">
-							<div class="column is-one-third">
-<!--								<a href="" target="_blank">-->
-<!--									<img src="img/sponsors/" alt="">-->
-<!--								</a>-->
-							</div>
+						<div class="columns is-centered is-multiline is-mobile">
 							<div class="column is-one-third">
 								<a href="https://www.dpgmedia.be/nl" target="_blank">
 									<img src="img/sponsors/dpgmedia-logo_alpha.png" alt="DPG Media">
 								</a>
 							</div>
 							<div class="column is-one-third">
-<!--								<a href="" target="_blank">-->
-<!--									<img src="img/sponsors/" alt="">-->
-<!--								</a>-->
+								<a href="https://www.froomle.ai/" target="_blank">
+									<img src="img/sponsors/froomle-logo.png" alt="Froomle">
+								</a>
 							</div>
 						</div>
 					</div>
