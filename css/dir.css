@@ -3,7 +3,7 @@
     --secondary: #769AD0;
     --dark: #333745;
     --light: #f8fbef;
-    --highlight: #ffdb99;
+    --highlight: #EBEBD3;
   }
 
 html {
@@ -56,7 +56,7 @@ html {
 }
 
 .button.is-light {
-    /*background: none;*/
+    background-color: var(--light);
     color: var(--primary);
 }
 
@@ -78,12 +78,13 @@ html {
     border-width: thin;
 }
 
-/* .is-family-monospace {
-    font-family: 'EB Garamond', serif !important;
-} */
+.first-author {
+    font-style: oblique;
+    font-weight: bold;
+}
 
-/* .is-family-sans-serif {
-    font-family: 'Montserrat', sans-serif !important;
-} */
+.author {
+    font-style: oblique;
+}
 
 /* f6f5f5 */
