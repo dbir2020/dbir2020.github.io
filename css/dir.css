@@ -3,6 +3,7 @@
     --secondary: #769AD0;
     --dark: #333745;
     --light: #f8fbef;
+    --highlight: #fcc55f;
   }
 
 html {
@@ -61,6 +62,19 @@ html {
 
 .button.is-primary {
     background-color: var(--primary);
+}
+
+.schedule-level-1 {
+    background-color: var(--highlight);
+    border-color: var(--light);
+    border-style: solid;
+    border-width: medium;
+}
+
+.schedule-level-2 {
+    border-top-style:solid;
+    border-color: var(--light);
+    border-width: thin;
 }
 
 /* .is-family-monospace {
