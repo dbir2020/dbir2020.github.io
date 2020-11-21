@@ -3,7 +3,7 @@
     --secondary: #769AD0;
     --dark: #333745;
     --light: #f8fbef;
-    --highlight: #fcc55f;
+    --highlight: #ffdb99;
   }
 
 html {
@@ -69,6 +69,7 @@ html {
     border-color: var(--light);
     border-style: solid;
     border-width: medium;
+    border-radius: 0.5cm;
 }
 
 .schedule-level-2 {
