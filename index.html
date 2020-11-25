@@ -11,7 +11,9 @@
 	<!-- <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon"> -->
 	<!-- Bulma Version 0.9.0-->
 	<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-	<link rel="stylesheet" href="css/dir.css">
+	<!-- Import with version in query string -->
+	<!-- This does makes it so that if you update the CSS and this version, loading the page will request the new css -->
+	<link rel="stylesheet" href="css/dir.css?v=0.1.0">
 	<link rel="stylesheet" href="css/bulma-divider.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -40,7 +42,8 @@
 					December 3, 2020
 				</h1>
 				<h2 class="title is-4 is-family-monospace is-primary">
-					The 19th Dutch-Belgian Information Retrieval Workshop <span class="belgian-emoji"></span> Antwerp (online)
+					The 19th Dutch-Belgian Information Retrieval Workshop <span class="belgian-emoji"></span> Antwerp
+					(online)
 				</h2>
 				<br>
 				<div class="social-media">
@@ -56,41 +59,38 @@
 	<section class="hero is-secondary">
 		<div class="hero-body">
 			<div class="container has-text-centered">
-				<h1 class="title is-1 is-family-monospace">Venue</h1>
+				<h1 class="title is-1 is-family-monospace">Tickets</h1>
 				<h3 class="title is-3 is-family-sans-serif">
-					DIR 2020 will be a virtual workshop.
+					Thanks to our sponsors DIR2020 is a free online event!
 				</h3>
-					<div class="columns is-centered">
-						<div class="column is-half">
-							<h3 class="title is-3 is-family-sans-serif is-primary">
-								Registrations are open!
-							</h3>
-							<!-- Noscript content for added SEO -->
-							<noscript>
-								<a href="https://dir2020.eventbrite.be" rel="noopener noreferrer" target="_blank">
-							</noscript>
-							<!-- You can customize this button any way you like -->
-							<button id="eventbrite-widget-modal-trigger-128126643239" type="button"
-									class="button is-primary is-family-sans-serif is-fullwidth">🎟️ Register Now</button>
-							<noscript></a>🎟️ Buy Tickets on Eventbrite</noscript>
+				<div class="columns is-centered">
+					<div class="column is-half">
+						<!-- Noscript content for added SEO -->
+						<noscript>
+							<a href="https://dir2020.eventbrite.be" rel="noopener noreferrer" target="_blank">
+						</noscript>
+						<!-- You can customize this button any way you like -->
+						<button id="eventbrite-widget-modal-trigger-128126643239" type="button"
+							class="button is-primary is-family-sans-serif is-fullwidth">🎟️ Register Now</button>
+						<noscript></a>🎟️ Get your Free Tickets on Eventbrite</noscript>
 
-							<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+						<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-							<script type="text/javascript">
-								window.EBWidgets.createWidget({
-									widgetType: 'checkout',
-									eventId: '128126643239',
-									modal: true,
-									modalTriggerElementId: 'eventbrite-widget-modal-trigger-128126643239',
-								});
-							</script>
-						</div>
+						<script type="text/javascript">
+							window.EBWidgets.createWidget({
+								widgetType: 'checkout',
+								eventId: '128126643239',
+								modal: true,
+								modalTriggerElementId: 'eventbrite-widget-modal-trigger-128126643239',
+							});
+						</script>
 					</div>
-					<div class="columns is-centered">
-						<div class="column is-four-fifths">
-							<div class="is-divider"></div>
-						</div>
+				</div>
+				<div class="columns is-centered">
+					<div class="column is-four-fifths">
+						<div class="is-divider"></div>
 					</div>
+				</div>
 
 				<!-- POSTERS  -->
 				<div class="columns is-centered">
@@ -115,7 +115,7 @@
 										<label class="label has-text-left" for="p_name">Name<sup>*</sup></label>
 										<div class="control">
 											<input class="input is-medium" type="text" name="_name" id="p_name" required
-												   autocomplete="name">
+												autocomplete="name">
 										</div>
 									</div>
 								</div>
@@ -124,7 +124,7 @@
 										<label class="label has-text-left" for="p_aff">Affiliation<sup></sup></label>
 										<div class="control">
 											<input class="input is-medium" type="text" name="_affiliation" id="p_aff"
-												   autocomplete="affiliation">
+												autocomplete="affiliation">
 										</div>
 									</div>
 								</div>
@@ -133,14 +133,14 @@
 								<label class="label has-text-left" for="p_replyto">Email<sup>*</sup></label>
 								<div class="control">
 									<input class="input is-medium" type="email" name="_replyto" id="p_replyto" required
-										   autocomplete="email">
+										autocomplete="email">
 								</div>
 							</div>
 							<div class="field">
 								<label class="label has-text-left" for="p_title">Poster Title<sup>*</sup></label>
 								<div class="control">
 									<input class="input is-medium" type="text" name="_title" id="p_title" required
-										   autocomplete="title">
+										autocomplete="title">
 								</div>
 							</div>
 							<div class="field">
@@ -150,8 +150,8 @@
 								</div>
 							</div>
 							<div class="control">
-								<button type="submit"
-									class="button is-primary is-family-sans-serif is-fullwidth">🖼️ Apply for Poster</button>
+								<button type="submit" class="button is-primary is-family-sans-serif is-fullwidth">🖼️
+									Apply for Poster</button>
 							</div>
 						</form>
 						<br>
@@ -160,6 +160,7 @@
 						</p>
 					</div>
 				</div>
+
 				<div class="columns is-centered">
 					<div class="column is-four-fifths">
 						<div class="is-divider"></div>
@@ -182,54 +183,238 @@
 								</a>
 							</div>
 						</div>
+						<div class="columns is-centered is-multiline is-mobile is-vcentered">
+							<div class="column is-one-third">
+								<a href="https://www.bol.com" target="_blank">
+									<img src="img/sponsors/nieuwe-logo.jpg" alt="Bol.com">
+								</a>
+							</div>
+							<div class="column is-one-third">
+								<a href="https://www.zeta-alpha.com/" target="_blank">
+									<img src="img/sponsors/zeta-alpha-logo.svg" alt="Zeta-Alpha">
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
+
 				<div class="columns is-centered">
 					<div class="column is-four-fifths">
 						<div class="is-divider"></div>
 					</div>
 				</div>
 
-				<!-- CALL FOR SPONSORS -->
-				<div class="columns is-centered">
-					<div class="column is-half">
-						<h1 class="title is-1 is-family-monospace">Call for Sponsors</h1>
-						<h1 class="title is-3 is-family-sans-serif">
-							Would you like to sponsor DIR2020?
-						</h1>
-						<a class="button is-primary is-fullwidth is-family-sans-serif "
-						   href="mailto:dutchbelgianir@gmail.com">
-							💰 Get in touch!
-						</a>
-					</div>
-				</div>
-				<div class="columns is-centered">
-					<div class="column is-four-fifths">
-						<div class="is-divider"></div>
-					</div>
-				</div>
 
-				<!-- ORGANIZERS  -->
+				<!-- Program -->
 				<div class="columns is-centered">
 					<div class="column is-half">
-						<h1 class="title is-1 is-family-monospace">Team</h1>
-						<p class="title is-4 is-family-sans-serif">
-							Bart Goethals (University of Antwerp & Froomle)<br />
-							Jan Van Balen (University of Antwerp)<br />
-							Joey de Pauw (University of Antwerp)<br />
-							Olivier Jeunen (University of Antwerp) <br />
-							Lien Michiels (University of Antwerp & Froomle)<br />
-							Robin Verachtert (University of Antwerp & Froomle)
-						</p>
-						<a class="button is-primary is-fullwidth is-family-sans-serif "
+						<h1 class="title is-1 is-family-monospace"><a id="program"></a>Program (CET)</h1>
+					</div>
+				</div>
+				<div class="columns is-centered">
+					<div class="column is-half">
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">9:30</p>
+							</div>
+							<div class="column has-text-left">
+								<p class="title is-4">Welcome</p>
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">9:45</p>
+							</div>
+							<div class="column has-text-left">
+								<div class="columns">
+									<div class="column">
+										<p class="title is-4"> Lightning Talks — eCommerce & Bandit Learning ⚡
+										</p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://dl.acm.org/doi/10.1145/3343413.3377956">The Role of Attributes in Product Quality Comparisons</a></p>
+										<p> <span class="first-author">Felipe Moraes</span><span class="author">, Jie Yang, Rongting Zhang, and Vanessa Murdock.</span> <b>(CHIIR'20)</b></p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://dl.acm.org/doi/10.1145/3394486.3403175">Joint Policy-Value Learning for Recommendation</a></p>
+										<p> <span class="first-author">Olivier Jeunen</span><span class="author">, David Rohde, Flavian Vasile, and Martin Bompaire.</span> <b>(KDD'20)</b></p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://dl.acm.org/doi/10.1145/3397271.3401102">Policy-Aware Unbiased Learning to Rank for Top-k Rankings</a></p>
+										<p> <span class="first-author">Harrie Oosterhuis</span><span class="author">, and Maarten de Rijke.</span> <b>(SIGIR'20)</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">10:30</p>
+							</div>
+							<div class="column has-text-left">
+								<p class="title is-4">Time for coffee &#9749;</p>
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">11:00</p>
+							</div>
+							<div class="column has-text-left">
+								<div class="columns">
+									<div class="column">
+										<p class="title is-4">Lightning Talks — Natural Language Processing ⚡</p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://dl.acm.org/doi/abs/10.1145/3383313.3412249">What does BERT know about books, movies and music? Probing BERT for
+											Conversational
+											Recommendation</a></p>
+										<p> <span class="first-author">Gustavo Penha</span><span class="author">, and Claudia Hauff.</span> <b>(RecSys'20)</b></p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://link.springer.com/chapter/10.1007/978-3-030-45439-5_7">Graph-Embedding Empowered Entity Retrieval</a></p>
+										<p> <span class="first-author">Emma J. Gerritse</span><span class="author">, Faegheh Hasibi, and Arjen P. de Vries.</span> <b>(ECIR'20)</b></p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://dl.acm.org/doi/abs/10.1145/3343413.3377971">Conversations with Documents: An Exploration of Document-Centered Assistance</a></p>
+										<p> <span class="first-author">Maartje ter Hoeve</span><span class="author">, Robert Sim, Elnaz Nouri, Adam Fourney, Maarten de Rijke, and Ryen W. White.</span> <b>(CHIIR'20)</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">11:45</p>
+							</div>
+							<div class="column has-text-left">
+								<p class="title is-4">Posters</p>
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">12:30</p>
+							</div>
+							<div class="column has-text-left">
+								<p class="title is-4">Lunch Break 🥙</p>
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">14:00</p>
+							</div>
+							<div class="column has-text-left">
+								<div class="columns">
+									<div class="column">
+										<p class="title is-4"> Lightning Talks — Fairness ⚡</p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://dl.acm.org/doi/10.1145/3340631.3394864">Beyond Optimizing for Clicks: Incorporating Editorial Values in News Recommendation</a></p>
+										<p><span class="author">Feng Lu, </span><span class="first-author">Anca Dumitrache</span><span class="author">, and David Graus.</span> <b>(UMAP'20)</b></p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://dl.acm.org/doi/10.1145/3340631.3394860">FairMatch: A Graph-based Approach for Improving Aggregate Diversity in Recommender Systems</a></p>
+										<p><span class="first-author">Masoud Mansoury</span><span class="author">, Himan Abdollahpouri, Mykola Pechenizkiy, Bamshad Mobasher, and Robin Burke.</span> <b>(UMAP'20)</b></p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://arxiv.org/abs/2010.14531">Assessing Viewpoint Diversity in Search Results Using Ranking Fairness Metrics</a></p>
+										<p><span class="first-author">Tim Draws</span><span class="author">, Nava Tintarev, Ujwal Gadiraju, Alessandro Bozzon, and Benjamin Timmermans.</span> <b>(BIAS'20, ECML-PKDD Workshop)</b></p>
+									</div>
+								</div>
+								<div class="columns schedule-level-2">
+									<div class="column">
+										<p><a href="https://dl.acm.org/doi/10.1145/3340631.3394844">What's in a User? Towards Personalising Transparency for Music Recommender Interfaces</a></p>
+										<p><span class="first-author">Martijn Millecamp</span><span class="author">, Nyi Nyi Htun, Cristina Conati, and Katrien Verbert.</span> <b>(UMAP'20)</b></p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">15:00</p>
+							</div>
+							<div class="column has-text-left">
+								<p class="title is-4">Posters </p>
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">16:00 </p>
+							</div>
+							<div class="column has-text-left">
+								<p class="title is-4"> Keynote</p>
+                                                        <div class="columns schedule-level-2">
+                                                                <div class="column">
+                                                                    <p><b>Fair Ranking with Biased Data</b></p>
+                                                                    <p><i>Thorsten Joachims, Cornell University</i></p>
+                                                                    </br>
+                                                                    <p><b>Abstract</b></p>
+                                                                    <p class="has-text-justified"><i>
+                                                                    Search engines and recommender systems have become the dominant matchmaker for a wide range of human endeavors -- from online retail to finding romantic partners. Consequently, they carry immense power in shaping markets and allocating opportunity to the participants. In this talk, I will discuss how the machine learning algorithms underlying these system can produce unfair or undesirable ranking policies for both exogenous and endogenous reasons. Exogenous reasons often manifest themselves as biases in the training data, which then get reflected in the learned ranking policy and lead to rich-get-richer dynamics. But even when trained with unbiased data, reasons endogenous to the algorithms can lead to unfair or undesirable allocation of opportunity. To overcome these challenges, I will present new machine learning algorithms that directly address some forms of endogenous and exogenous unfairness.
+                                                                    </i></p>
+                                                                    </br>
+                                                                    <p><b>Speaker Bio</b></p>
+                                                                    <p class="has-text-justified"><i>
+                                                                    Thorsten Joachims is a Professor in the Department of Computer Science and in the Department of Information Science at Cornell University. His research interests center on a synthesis of theory and system building in machine learning, with applications in information access, language technology, and recommendation. His past research focused on counterfactual and causal inference, support vector machines, text classification, structured output prediction, convex optimization, learning to rank, learning with preferences, and learning from implicit feedback. He is an ACM Fellow, AAAI Fellow, and Humboldt Fellow.
+                                                                    </i></p>
+                                                                </div>
+                                                        </div>
+							</div>
+						</div>
+						<div class="columns is-centered schedule-level-1">
+							<div class="column is-narrow">
+								<p class="title is-4">17:00 </p>
+							</div>
+							<div class="column has-text-left">
+								<p class="title is-4"> Socials 🥳 </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="columns is-centered">
+				<div class="column is-four-fifths">
+					<div class="is-divider"></div>
+				</div>
+			</div>
+
+			<!-- ORGANIZERS  -->
+			<div class="columns is-centered">
+				<div class="column is-half has-text-centered">
+					<h1 class="title is-1 is-family-monospace">Team</h1>
+					<p class="title is-4 is-family-sans-serif">
+						Bart Goethals (University of Antwerp & Froomle)<br />
+						Jan Van Balen (University of Antwerp)<br />
+						Joey de Pauw (University of Antwerp)<br />
+						Olivier Jeunen (University of Antwerp) <br />
+						Lien Michiels (University of Antwerp & Froomle)<br />
+						Robin Verachtert (University of Antwerp & Froomle)
+					</p>
+					<a class="button is-primary is-fullwidth is-family-sans-serif "
 						href="mailto:dutchbelgianir@gmail.com">
 						Questions? Remarks? Contact us!
 					</a>
-					</div>
 				</div>
-
 			</div>
 		</div>
+
 	</section>
 </body>
 
