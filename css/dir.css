@@ -10,6 +10,10 @@ html {
     background-color: var(--light);
 }
 
+.title.is-4 a{
+    text-decoration: underline;
+}
+
 .hero.is-fullheight.landing {
     /* background-image: url('https://images.unsplash.com/photo-1532616998070-8e189b324cb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format'); */
     background-image: url('../img/pexels-skitterphoto-722701.jpg');
