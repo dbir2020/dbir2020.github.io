@@ -21,41 +21,21 @@
 </head>
 
 <body>
-	<script>
-		let emojis = ["&#127839;", "&#129479;", "&#127851;"]
-		let emoji = emojis[Math.floor(Math.random() * emojis.length)];
-		function swap_emoji() {
-			$(".belgian-emoji").html(emoji)
-		}
-
-		$(function () {
-			swap_emoji()
-		});
-	</script>
-	<nav class="navbar is-transparent">
-		<div class="navbar-brand is-light">
-			<a class="navbar-item" href="https://dir2020.be">
-				<h2 class="title is-2 is-family-sans-serif is-primary">DIR 2020</h2>
-			</a>
-		</div>
-	</nav>
-
 	<section class="hero is-secondary">
-		<div class="hero-body">
+		<div class="hero-body" style="padding-top: 24px">
 			<div class="container has-text-centered">
+				<h1 class="title is-1 is-family-monospace">Posters & Sponsor Booths</h1>
 				<div class="columns is-centered">
 					<div class="column is-half">
-						<h1 class="title is-1 is-family-monospace"><a id="program"></a>Posters & Sponsor booths</h1>
+						<img src="img/poster_directory.png" alt="poster directory">
 					</div>
 				</div>
 				<div class="columns is-centered">
-					<div class="column is-half">
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+					<div class="column is-two-thirds">
+						<div class="columns is-centered is-mobile">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block A</p>
-							</div>
-							<div class="column has-text-left">
-								<div class="columns schedule-level-2">
+								<div class="columns is-mobile schedule-level-2">
 									<div class="column">
 										<p>What is Relevant on the MS Marco Passage Ranking Leaderboard?</p>
 										<p> <span class="first-author">Arjen de Vries</span></p>
@@ -69,16 +49,12 @@
 								</div>
 								<div class="columns schedule-level-2">
 									<div class="column">
-										<p>Sponsor - <b><a href="https://www.textkernel.com/">Textkernel</a></b></p>
+										<p>Sponsor - <b><a href="https://www.textkernel.com/" target="_blank">Textkernel</a></b></p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block B</p>
-							</div>
-							<div class="column has-text-left">
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>A New Neural Search and Insights Platform for Navigating and Organizing
@@ -95,16 +71,14 @@
 								</div>
 								<div class="columns schedule-level-2">
 									<div class="column">
-										<p>Sponsor - <b><a href="https://www.froomle.ai">Froomle</a></b></p>
+										<p>Sponsor - <b><a href="https://www.froomle.ai" target="_blank">Froomle</a></b></p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+						<div class="columns is-centered is-mobile">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block C</p>
-							</div>
-							<div class="column has-text-left">
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>Improving End-to-End Sequential Recommendations with Intent-Aware
@@ -121,12 +95,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block D</p>
-							</div>
-							<div class="column has-text-left">
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>A Comparison of Supervised Learning to Match Methods for Product Search
@@ -151,11 +121,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+						<div class="columns is-centered is-mobile">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block E</p>
-							</div>
-							<div class="column has-text-left">
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>Latency… Matters, Large-Scale Recommender Systems at bol.com
@@ -163,10 +131,9 @@
 										<p> <span class="first-author">Barrie Kersbergen</span></p>
 									</div>
 								</div>
-
 								<div class="columns schedule-level-2">
 									<div class="column">
-										<p>Sponsor - <b><a href="https://careers.bol.com/">Bol.com</a></b></p>
+										<p>Sponsor - <b><a href="https://careers.bol.com/" target="_blank">Bol.com</a></b></p>
 									</div>
 								</div>
 								<div class="columns schedule-level-2">
@@ -178,12 +145,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block F</p>
-							</div>
-							<div class="column has-text-left">
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>Cascade Model-based Propensity Estimation for Counterfactual Learning to
@@ -194,7 +157,7 @@
 								</div>
 								<div class="columns schedule-level-2">
 									<div class="column">
-										<p>Sponsor - <b><a href="https://www.dpgmedia.be/nl">DPG Media</a></b></p>
+										<p>Sponsor - <b><a href="https://www.dpgmedia.be" target="_blank">DPG Media</a></b></p>
 									</div>
 								</div>
 								<div class="columns schedule-level-2">
@@ -206,18 +169,15 @@
 								</div>
 							</div>
 						</div>
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+						<div class="columns is-centered is-mobile">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block G</p>
-							</div>
-							<div class="column has-text-left">
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>Towards Memorable Information Retrieval</p>
 										<p> <span class="first-author">Sihang Qiu</span></p>
 									</div>
 								</div>
-
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>Document ranking with BERT on a collection with complete relevance judgments
@@ -233,12 +193,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block H</p>
-							</div>
-							<div class="column has-text-left">
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>Challenges in the Evaluation of Conversational Search Systems
@@ -256,16 +212,14 @@
 								</div>
 								<div class="columns schedule-level-2">
 									<div class="column">
-										<p>Sponsor - <b><a href="https://www.zeta-alpha.com/">Zeta Alpha</a></b></p>
+										<p>Sponsor - <b><a href="https://www.zeta-alpha.com/" target="_blank">Zeta Alpha</a></b></p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="columns is-centered schedule-level-1">
-							<div class="column is-narrow">
+						<div class="columns is-mobile">
+							<div class="column is-half schedule-level-1 has-text-left">
 								<p class="title is-4">Block I</p>
-							</div>
-							<div class="column has-text-left">
 								<div class="columns schedule-level-2">
 									<div class="column">
 										<p>Conversations with Documents. An Exploration of Document-Centered
@@ -293,7 +247,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
